@@ -242,6 +242,23 @@ section{padding:120px 0;position:relative}
 .stop.final .ic{font-family:"Cormorant Garamond",serif;font-size:16px}
 @media(max-width:760px){.stop{width:auto;left:72px !important;right:0}.stop .ic{display:none}.stop{padding:16px 18px 14px}.stop h4{font-size:20px;margin:4px 0}.stop p{font-size:13.5px;line-height:1.5}.stop .yr2{font-size:32px}}
 
+
+/* ============ TODAY ============ */
+.today{border-top:1px solid var(--line);background:radial-gradient(ellipse 60% 70% at 50% 100%,rgba(111,231,255,.06),transparent 70%),var(--bg)}
+.today .sec-head p{font-size:18px;color:#d9d1c4;max-width:680px;margin-left:auto;margin-right:auto}
+.route{display:flex;align-items:center;justify-content:center;gap:28px;max-width:860px;margin:10px auto 0}
+.city{text-align:center;min-width:170px}
+.city .pin{display:block;width:16px;height:16px;margin:0 auto 14px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 6px rgba(236,210,154,.15),0 0 24px rgba(236,210,154,.6)}
+.city b{display:block;font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:600;line-height:1}
+.city em{display:block;margin-top:6px;font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.route .line{position:relative;flex:1;height:2px;margin-bottom:46px;background:repeating-linear-gradient(90deg,rgba(201,164,92,.6) 0 8px,transparent 8px 16px)}
+.route .dot{position:absolute;top:50%;left:0;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan);animation:fly 4s ease-in-out infinite}
+@keyframes fly{0%{left:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:calc(100% - 10px);opacity:0}}
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:44px}
+.tags span{padding:9px 18px;border:1px solid rgba(201,164,92,.35);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+@media(max-width:640px){.route{flex-direction:column;gap:6px}.route .line{width:2px;height:70px;flex:none;margin:6px 0;background:repeating-linear-gradient(180deg,rgba(201,164,92,.6) 0 8px,transparent 8px 16px)}.route .dot{left:50% !important;margin-left:-5px;top:0;animation:flyv 3s ease-in-out infinite}.city b{font-size:32px}}
+@keyframes flyv{0%{top:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:calc(100% - 10px);opacity:0}}
+
 /* collaborations */
 .collab{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center;margin-bottom:72px}
@@ -314,6 +331,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <li><a href="#galerija">Galerija</a></li>
       <li><a href="#o-meni">O meni</a></li>
       <li><a href="#put">Put</a></li>
+      <li><a href="#danas">Danas</a></li>
       <li><a href="#saradnje">Saradnje</a></li>
       <li><a href="#muzika">Muzika</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
@@ -439,6 +457,23 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="stop" data-k="5"><div class="ic">♪</div><div class="yr2">2016.</div><h4>„Džukele“</h4><p>Druga autorska pjesma i spot — Hayat produkcija.</p></div>
       <div class="stop final" data-k="6"><div class="ic">20</div><div class="yr2">2023.</div><h4>Jubilej</h4><p>Dvadeset godina na estradi i saradnje s najvećim imenima regiona.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ DANAS ============ -->
+<section id="danas" class="today">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Danas</div>
+      <h2>Sadašnje zanimanje</h2>
+      <p>Marijo Softa danas radi kao savjetnik kolumbijske korporacije koja se bavi izvozom voća i ribe iz Južne Amerike u Evropu, sa sjedištima u Bogoti i Zagrebu.</p>
+    </div>
+    <div class="route reveal">
+      <div class="city"><span class="pin"></span><b>Bogotá</b><em>Kolumbija · Južna Amerika</em></div>
+      <div class="line"><span class="dot"></span></div>
+      <div class="city"><span class="pin"></span><b>Zagreb</b><em>Hrvatska · Evropa</em></div>
+    </div>
+    <div class="tags reveal"><span>Savjetnik korporacije</span><span>Izvoz voća</span><span>Izvoz ribe</span><span>Južna Amerika → Evropa</span></div>
   </div>
 </section>
 
